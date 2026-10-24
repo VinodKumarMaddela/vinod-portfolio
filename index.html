@@ -169,35 +169,68 @@ a {
         padding: 35px 15px;
     }
 }
+
+/* Profile photo and introduction layout */
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 50px auto 20px;
+}
+
+.hero-photo {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    line-height: 1.2;
+}
+
+.hero-description {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .hero-layout {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .hero-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+}
 </style>
 </head>
 
 <body>
-
+    
 <!-- HEADER -->
 <header>
-    <img src="images/profile.jpg"
-     alt="Vinod Kumar Maddela"
-     style="width:150px;height:150px;object-fit:cover;
-            border-radius:50%;vertical-align:middle;">
-    <h1>Hi, I'm Vinod Kumar 👋</h1>
-
-    <p class="typing"></p>
-
-    <a href="https://drive.google.com/file/d/1LEcpZ9APEPGqF73fQrWHjeQ2rcyfTK8d/view?usp=drivesdk"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn">
-        Resume
-    </a>
-
-    <a href="https://github.com/VinodKumarMaddela"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn">
-        GitHub
-    </a>
-
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -207,6 +240,43 @@ a {
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <div class="hero-layout">
+        <img
+            src="images/profile.jpg"
+            alt="Vinod Kumar Maddela"
+            class="hero-photo"
+        >
+
+        <div class="hero-content">
+            <h1>Hi, I'm Vinod Kumar 👋</h1>
+
+            <p class="typing"></p>
+
+            <p class="hero-description">
+                Building web applications with Python, Django,
+                MySQL, and modern technologies.
+            </p>
+
+            <a
+                href="https://drive.google.com/file/d/1LEcpZ9APEPGqF73fQrWHjeQ2rcyfTK8d/view?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+            >
+                Resume
+            </a>
+
+            <a
+                href="https://github.com/VinodKumarMaddela"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+            >
+                GitHub
+            </a>
+        </div>
+    </div>
 </header>
 
 <!-- ABOUT -->
