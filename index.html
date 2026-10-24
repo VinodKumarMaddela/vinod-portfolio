@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +11,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -131,6 +130,9 @@ footer {
 
 .project-img {
     width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: #0f172a;
     border-radius: 10px;
     margin: 10px 0;
     transition: 0.3s;
@@ -138,6 +140,11 @@ footer {
 
 .project-img:hover {
     transform: scale(1.03);
+}
+
+.project-card h4 {
+    color: #38bdf8;
+    margin-top: 25px;
 }
 
 ul {
@@ -164,756 +171,442 @@ a {
     color: #94a3b8;
 }
 
-</style>
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
 
+    header {
+        padding: 50px 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-
 <!-- HEADER -->
-
 <header>
+    <h1>Hi, I'm Vinod Kumar 👋</h1>
 
-<h1>Hi, I'm Vinod Kumar 👋</h1>
+    <p class="typing"></p>
 
-<p class="typing"></p>
+    <a href="https://drive.google.com/file/d/1nTQ01h6vXTHEK3N8L3uCFm2s5ZSUVl3H/view?usp=drivesdk"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn">
+        Resume
+    </a>
 
-<a href="https://drive.google.com/file/d/1nTQ01h6vXTHEK3N8L3uCFm2s5ZSUVl3H/view?usp=drivesdk"
-   target="_blank"
-   class="btn">
-   Resume
-</a>
+    <a href="https://github.com/VinodKumarMaddela"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn">
+        GitHub
+    </a>
 
-<a href="https://github.com/VinodKumarMaddela"
-   target="_blank"
-   class="btn">
-   GitHub
-</a>
-
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#internships">Internships</a>
-<a href="#certifications">Certifications</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-
 <!-- ABOUT -->
-
 <section id="about">
+    <h2>About Me</h2>
 
-<h2>About Me</h2>
+    <p>
+        I am a <span class="highlight">Python-focused Software Developer</span>
+        with hands-on experience in Python, Django, RESTful APIs, SQL, MySQL,
+        JSON, and backend application development through internships and projects.
+    </p>
 
-<p>
-I am a <span class="highlight">Python-focused Software Developer</span>
-with hands-on experience in Python, Django, RESTful APIs, SQL, MySQL,
-JSON, and backend application development through internships and projects.
-</p>
+    <p>
+        I have a strong foundation in Python programming, Object-Oriented Programming
+        (OOP), Data Structures, database management, CRUD operations, debugging,
+        and software development principles.
+    </p>
 
-<p>
-I have a strong foundation in Python programming, Object-Oriented Programming
-(OOP), Data Structures, database management, CRUD operations, debugging,
-and software development principles.
-</p>
+    <p>
+        I have developed web applications, RESTful API-based applications,
+        database-driven systems, and application functionality using Python,
+        Django, SQL, HTML, CSS, and Bootstrap.
+    </p>
 
-<p>
-I have developed web applications, RESTful API-based applications,
-database-driven systems, and application functionality using Python,
-Django, SQL, HTML, CSS, and Bootstrap.
-</p>
-
-<p>
-I am actively seeking opportunities to contribute to software development
-teams, learn new technologies, and grow as a Python Software Developer
-and Backend Developer.
-</p>
-
+    <p>
+        I am actively seeking opportunities to contribute to software development
+        teams, learn new technologies, and grow as a Python Software Developer
+        and Backend Developer.
+    </p>
 </section>
-
 
 <!-- SKILLS -->
-
 <section id="skills">
+    <h2>Skills</h2>
 
-<h2>Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>💻 Frontend</h3>
+            <p>HTML, CSS, Bootstrap, JavaScript (Basic)</p>
+            <div style="background:#334155;border-radius:6px;overflow:hidden;">
+                <div style="width:80%;padding:5px;background:#38bdf8;"></div>
+            </div>
+        </div>
 
+        <div class="card">
+            <h3>⚙ Backend</h3>
+            <p>Python, Django, RESTful APIs, CRUD Operations, JSON</p>
+            <div style="background:#334155;border-radius:6px;overflow:hidden;">
+                <div style="width:90%;padding:5px;background:#38bdf8;"></div>
+            </div>
+        </div>
 
-<div class="skills">
+        <div class="card">
+            <h3>🗄 Database</h3>
+            <p>SQL, MySQL, Database Management</p>
+            <div style="background:#334155;border-radius:6px;overflow:hidden;">
+                <div style="width:80%;padding:5px;background:#38bdf8;"></div>
+            </div>
+        </div>
 
+        <div class="card">
+            <h3>🛠 Tools</h3>
+            <p>Git, GitHub, VS Code, PyCharm</p>
+            <div style="background:#334155;border-radius:6px;overflow:hidden;">
+                <div style="width:85%;padding:5px;background:#38bdf8;"></div>
+            </div>
+        </div>
+    </div>
 
-<div class="card">
+    <br>
 
-<h3>💻 Frontend</h3>
+    <div class="skills">
+        <div class="card">
+            <h3>🐍 Python</h3>
+            <p>Core Programming</p>
+        </div>
 
-<p>
-HTML, CSS, Bootstrap, JavaScript (Basic)
-</p>
+        <div class="card">
+            <h3>🌐 Django</h3>
+            <p>Web Application Development</p>
+        </div>
 
-<div style="background:#334155;border-radius:6px;overflow:hidden;">
-<div style="width:80%;padding:5px;background:#38bdf8;"></div>
-</div>
+        <div class="card">
+            <h3>🔗 REST APIs</h3>
+            <p>API Development</p>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>🗄 SQL & MySQL</h3>
+            <p>Database Management</p>
+        </div>
 
+        <div class="card">
+            <h3>📦 JSON</h3>
+            <p>API Data Communication</p>
+        </div>
 
-<div class="card">
+        <div class="card">
+            <h3>☕ Java</h3>
+            <p>Programming & Development</p>
+        </div>
 
-<h3>⚙ Backend</h3>
-
-<p>
-Python, Django, RESTful APIs, CRUD Operations, JSON
-</p>
-
-<div style="background:#334155;border-radius:6px;overflow:hidden;">
-<div style="width:90%;padding:5px;background:#38bdf8;"></div>
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h3>🗄 Database</h3>
-
-<p>
-SQL, MySQL, Database Management
-</p>
-
-<div style="background:#334155;border-radius:6px;overflow:hidden;">
-<div style="width:80%;padding:5px;background:#38bdf8;"></div>
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h3>🛠 Tools</h3>
-
-<p>
-Git, GitHub, VS Code, PyCharm
-</p>
-
-<div style="background:#334155;border-radius:6px;overflow:hidden;">
-<div style="width:85%;padding:5px;background:#38bdf8;"></div>
-</div>
-
-</div>
-
-
-</div>
-
-
-<br>
-
-
-<div class="skills">
-
-
-<div class="card">
-<h3>🐍 Python</h3>
-<p>Core Programming</p>
-</div>
-
-
-<div class="card">
-<h3>🌐 Django</h3>
-<p>Web Application Development</p>
-</div>
-
-
-<div class="card">
-<h3>🔗 REST APIs</h3>
-<p>API Development</p>
-</div>
-
-
-<div class="card">
-<h3>🗄 SQL & MySQL</h3>
-<p>Database Management</p>
-</div>
-
-
-<div class="card">
-<h3>📦 JSON</h3>
-<p>API Data Communication</p>
-</div>
-
-
-<div class="card">
-<h3>☕ Java</h3>
-<p>Programming & Development</p>
-</div>
-
-
-<div class="card">
-<h3>🛠 Git & GitHub</h3>
-<p>Version Control</p>
-</div>
-
-
-</div>
-
+        <div class="card">
+            <h3>🛠 Git & GitHub</h3>
+            <p>Version Control</p>
+        </div>
+    </div>
 </section>
-
 
 <!-- INTERNSHIPS -->
-
 <section id="internships">
+    <h2>Internship Experience</h2>
 
-<h2>Internship Experience</h2>
+    <div class="project-card">
+        <h3>💼 Software Engineering Virtual Experience – J.P. Morgan Chase & Co. (Forage)</h3>
+        <p class="duration"><b>Jul 2024</b></p>
+        <ul>
+            <li>Built live data visualizations using JPMorgan's Perspective library to analyze and present financial data.</li>
+            <li>Implemented interactive visualization features to improve data presentation and user interaction.</li>
+        </ul>
+    </div>
 
+    <div class="project-card">
+        <h3>💼 Software Development Intern – Prodigy InfoTech</h3>
+        <p class="duration"><b>Dec 2023 – Jan 2024</b></p>
+        <ul>
+            <li>Developed Python-based mini-projects by implementing application functionality and problem-solving solutions.</li>
+            <li>Debugged and tested applications to identify and resolve software issues and improve code reliability.</li>
+        </ul>
+    </div>
 
-<div class="project-card">
+    <div class="project-card">
+        <h3>💼 Java Developer Intern – CODSOFT</h3>
+        <p class="duration"><b>Nov 2023 – Dec 2023</b></p>
+        <ul>
+            <li>Developed Java-based modules and implemented application functionality as part of software development projects.</li>
+            <li>Completed assigned development tasks within project timelines and collaborated with team members to support project delivery.</li>
+        </ul>
+    </div>
 
-<h3>
-💼 Software Engineering Virtual Experience –
-J.P. Morgan Chase & Co. (Forage)
-</h3>
-
-<p class="duration">
-<b>Jul 2024</b>
-</p>
-
-<ul>
-
-<li>
-Built live data visualizations using JPMorgan’s Perspective
-library to analyze and present financial data.
-</li>
-
-<li>
-Implemented interactive visualization features to improve
-data presentation and user interaction.
-</li>
-
-</ul>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>
-💼 Software Development Intern – Prodigy InfoTech
-</h3>
-
-<p class="duration">
-<b>Dec 2023 – Jan 2024</b>
-</p>
-
-<ul>
-
-<li>
-Developed Python-based mini-projects by implementing
-application functionality and problem-solving solutions.
-</li>
-
-<li>
-Debugged and tested applications to identify and resolve
-software issues and improve code reliability.
-</li>
-
-</ul>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>
-💼 Java Developer Intern – CODSOFT
-</h3>
-
-<p class="duration">
-<b>Nov 2023 – Dec 2023</b>
-</p>
-
-<ul>
-
-<li>
-Developed Java-based modules and implemented application
-functionality as part of software development projects.
-</li>
-
-<li>
-Completed assigned development tasks within project timelines
-and collaborated with team members to support project delivery.
-</li>
-
-</ul>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>
-💼 Java Trainee Intern – Smartech Solutions, Tirupati
-</h3>
-
-<p class="duration">
-<b>Apr 2023 – Jul 2023</b>
-</p>
-
-<ul>
-
-<li>
-Assisted with debugging and troubleshooting Java applications
-to identify and resolve code issues.
-</li>
-
-<li>
-Strengthened Java programming and software development skills
-through hands-on project experience.
-</li>
-
-</ul>
-
-</div>
-
+    <div class="project-card">
+        <h3>💼 Java Trainee Intern – Smartech Solutions, Tirupati</h3>
+        <p class="duration"><b>Apr 2023 – Jul 2023</b></p>
+        <ul>
+            <li>Assisted with debugging and troubleshooting Java applications to identify and resolve code issues.</li>
+            <li>Strengthened Java programming and software development skills through hands-on project experience.</li>
+        </ul>
+    </div>
 </section>
-
 
 <!-- PROJECTS -->
-
 <section id="projects">
+    <h2>Projects</h2>
 
-<h2>Projects</h2>
+    <!-- JOB APPLICATION TRACKER PRO -->
+    <div class="project-card featured">
+        <h3>💼 Job Application Tracker Pro</h3>
 
+        <p>
+            Developed a web-based job application tracking system using Django and MySQL
+            to organize job applications, monitor application statuses, and manage records
+            from a personalized dashboard.
+        </p>
 
-<!-- E-COMMERCE -->
+        <p>
+            Implemented user registration and login, secure user-specific data access,
+            CRUD operations, and search/filter functionality.
+        </p>
 
-<div class="project-card featured">
+        <p class="tech">
+            <b>Tech:</b> Python, Django, MySQL, HTML, CSS, Bootstrap
+        </p>
 
-<h3>🛒 E-Commerce Website</h3>
+        <h4>Project Screenshots</h4>
 
-<p>
-<b>Description:</b>
-Developed an e-commerce web application using Django and Python
-with product catalog, user authentication, shopping cart,
-order management, and admin functionality.
-</p>
+        <div class="skills">
+            <div class="card">
+                <a href="https://github.com/VinodKumarMaddela/JobApplicationTracker/blob/master/screenshots/dashboard.png"
+                   target="_blank" rel="noopener noreferrer">
+                    <img class="project-img"
+                         src="https://raw.githubusercontent.com/VinodKumarMaddela/JobApplicationTracker/master/screenshots/dashboard.png"
+                         alt="Job Application Tracker Pro dashboard"
+                         loading="lazy">
+                </a>
+                <p>Dashboard</p>
+            </div>
 
-<p>
-Implemented database-driven application features and responsive
-frontend components using HTML, CSS, and Bootstrap.
-</p>
+            <div class="card">
+                <a href="https://github.com/VinodKumarMaddela/JobApplicationTracker/blob/master/screenshots/login.png"
+                   target="_blank" rel="noopener noreferrer">
+                    <img class="project-img"
+                         src="https://raw.githubusercontent.com/VinodKumarMaddela/JobApplicationTracker/master/screenshots/login.png"
+                         alt="Job Application Tracker Pro login page"
+                         loading="lazy">
+                </a>
+                <p>Login Page</p>
+            </div>
 
-<p class="tech">
-<b>Tech:</b>
-Django, Python, HTML, CSS, Bootstrap
-</p>
+            <div class="card">
+                <a href="https://github.com/VinodKumarMaddela/JobApplicationTracker/blob/master/screenshots/register.png"
+                   target="_blank" rel="noopener noreferrer">
+                    <img class="project-img"
+                         src="https://raw.githubusercontent.com/VinodKumarMaddela/JobApplicationTracker/master/screenshots/register.png"
+                         alt="Job Application Tracker Pro registration page"
+                         loading="lazy">
+                </a>
+                <p>Registration Page</p>
+            </div>
+        </div>
 
-<p class="duration">
-<b>Duration:</b>
-Jan 2020 – Mar 2020
-</p>
+        <p>
+            <a class="btn"
+               href="https://github.com/VinodKumarMaddela/JobApplicationTracker"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </p>
+    </div>
 
-</div>
+    <!-- E-COMMERCE -->
+    <div class="project-card featured">
+        <h3>🛒 E-Commerce Website</h3>
+        <p>
+            <b>Description:</b>
+            Developed an e-commerce web application using Django and Python
+            with product catalog, user authentication, shopping cart,
+            order management, and admin functionality.
+        </p>
+        <p>Implemented database-driven application features and responsive frontend components using HTML, CSS, and Bootstrap.</p>
+        <p class="tech"><b>Tech:</b> Django, Python, HTML, CSS, Bootstrap</p>
+        <p class="duration"><b>Duration:</b> Jan 2020 – Mar 2020</p>
+    </div>
 
+    <!-- TASK MANAGER -->
+    <div class="project-card">
+        <h3>📝 Task Manager Application</h3>
+        <p>Developed a task management application using Python with user authentication, task creation, updating, deletion, and status tracking.</p>
+        <p>Designed and integrated RESTful APIs to support CRUD operations and JSON-based communication between application components.</p>
+        <p>Integrated SQL database functionality for storing and managing task-related data.</p>
+        <p class="tech"><b>Tech:</b> Python, RESTful APIs, SQL, Bootstrap, JSON</p>
+        <p class="duration"><b>Duration:</b> Jan 2021 – Mar 2021</p>
+    </div>
 
-<!-- TASK MANAGER -->
+    <!-- STUDENT MANAGEMENT -->
+    <div class="project-card">
+        <h3>🎓 Student Management System</h3>
+        <p>Developed a comprehensive system to manage student information efficiently.</p>
+        <p>Implemented CRUD operations for adding, updating, deleting, and viewing student records.</p>
+        <p>Implemented search functionality based on student ID or name and integrated performance tracking with grade calculation.</p>
+        <p class="tech"><b>Tech:</b> Python</p>
+        <p class="duration"><b>Duration:</b> Nov 2024 – Dec 2024</p>
+    </div>
 
-<div class="project-card">
+    <!-- ATM -->
+    <div class="project-card">
+        <h3>🏧 ATM Management System</h3>
+        <p>Designed and developed a user-friendly ATM Management System to simulate basic banking operations.</p>
+        <p>Implemented user authentication using account numbers and PINs, cash withdrawal, balance inquiry, mini statement generation, and fund transfer.</p>
+        <p>Added administrative functionality for account creation, modification, and deletion.</p>
+        <p class="tech"><b>Tech:</b> Python, SQL</p>
+        <p class="duration"><b>Duration:</b> Oct 2023 – Nov 2023</p>
+    </div>
 
-<h3>📝 Task Manager Application</h3>
-
-<p>
-Developed a task management application using Python with
-user authentication, task creation, updating, deletion,
-and status tracking.
-</p>
-
-<p>
-Designed and integrated RESTful APIs to support CRUD operations
-and JSON-based communication between application components.
-</p>
-
-<p>
-Integrated SQL database functionality for storing and managing
-task-related data.
-</p>
-
-<p class="tech">
-<b>Tech:</b>
-Python, RESTful APIs, SQL, Bootstrap, JSON
-</p>
-
-<p class="duration">
-<b>Duration:</b>
-Jan 2021 – Mar 2021
-</p>
-
-</div>
-
-
-<!-- STUDENT MANAGEMENT -->
-
-<div class="project-card">
-
-<h3>🎓 Student Management System</h3>
-
-<p>
-Developed a comprehensive system to manage student information
-efficiently.
-</p>
-
-<p>
-Implemented CRUD operations for adding, updating, deleting,
-and viewing student records.
-</p>
-
-<p>
-Implemented search functionality based on student ID or name
-and integrated performance tracking with grade calculation.
-</p>
-
-<p class="tech">
-<b>Tech:</b>
-Python
-</p>
-
-<p class="duration">
-<b>Duration:</b>
-Nov 2024 – Dec 2024
-</p>
-
-</div>
-
-
-<!-- ATM -->
-
-<div class="project-card">
-
-<h3>🏧 ATM Management System</h3>
-
-<p>
-Designed and developed a user-friendly ATM Management System
-to simulate basic banking operations.
-</p>
-
-<p>
-Implemented user authentication using account numbers and PINs,
-cash withdrawal, balance inquiry, mini statement generation,
-and fund transfer.
-</p>
-
-<p>
-Added administrative functionality for account creation,
-modification, and deletion.
-</p>
-
-<p class="tech">
-<b>Tech:</b>
-Python, SQL
-</p>
-
-<p class="duration">
-<b>Duration:</b>
-Oct 2023 – Nov 2023
-</p>
-
-</div>
-
-
-<!-- DPAEKS -->
-
-<div class="project-card">
-
-<h3>
-🔐 Dual-Server Public-Key Authenticated Encryption with Keyword Search
-</h3>
-
-<p>
-<b>Problem:</b>
-Secure searching of sensitive cloud data while maintaining
-data confidentiality and usability.
-</p>
-
-<p>
-<b>Solution:</b>
-Designed a Dual-server Public-key Authenticated Encryption
-with Keyword Search (DPAEKS) system using two non-cooperating
-servers to address security challenges associated with
-searchable encryption.
-</p>
-
-<p class="tech">
-<b>Tech:</b>
-Java, SQL, Cryptography
-</p>
-
-<p class="duration">
-<b>Duration:</b>
-Apr 2023 – Jul 2023
-</p>
-
-</div>
-
-
+    <!-- DPAEKS -->
+    <div class="project-card">
+        <h3>🔐 Dual-Server Public-Key Authenticated Encryption with Keyword Search</h3>
+        <p><b>Problem:</b> Secure searching of sensitive cloud data while maintaining data confidentiality and usability.</p>
+        <p><b>Solution:</b> Designed a Dual-server Public-key Authenticated Encryption with Keyword Search (DPAEKS) system using two non-cooperating servers to address security challenges associated with searchable encryption.</p>
+        <p class="tech"><b>Tech:</b> Java, SQL, Cryptography</p>
+        <p class="duration"><b>Duration:</b> Apr 2023 – Jul 2023</p>
+    </div>
 </section>
-
 
 <!-- CERTIFICATIONS -->
-
 <section id="certifications">
+    <h2>Certifications</h2>
 
-<h2>Certifications</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>🏆 Deloitte Technology Virtual Experience</h3>
+            <p>Technology Virtual Experience Program — Deloitte Australia (Forage, 2025)</p>
+        </div>
 
+        <div class="card">
+            <h3>📜 Python Django Full Stack Development</h3>
+            <p>Udemy Certification (2025)</p>
+        </div>
 
-<div class="skills">
+        <div class="card">
+            <h3>📜 Python & Django Framework</h3>
+            <p>Udemy Certification (2025)</p>
+        </div>
 
+        <div class="card">
+            <h3>💼 Software Engineering Virtual Experience</h3>
+            <p>J.P. Morgan (Forage, 2024)</p>
+        </div>
 
-<div class="card">
+        <div class="card">
+            <h3>💻 Software Development Internship Certificate</h3>
+            <p>Prodigy InfoTech (2024)</p>
+        </div>
 
-<h3>🏆 Deloitte Technology Virtual Experience</h3>
+        <div class="card">
+            <h3>☕ Java Programming Internship Certificate</h3>
+            <p>CODSOFT (2023)</p>
+        </div>
 
-<p>
-Technology Virtual Experience Program —
-Deloitte Australia (Forage, 2025)
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>📜 Python Django Full Stack Development</h3>
-
-<p>
-Udemy Certification (2025)
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>📜 Python & Django Framework</h3>
-
-<p>
-Udemy Certification (2025)
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>💼 Software Engineering Virtual Experience</h3>
-
-<p>
-J.P. Morgan (Forage, 2024)
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>💻 Software Development Internship Certificate</h3>
-
-<p>
-Prodigy InfoTech (2024)
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>☕ Java Programming Internship Certificate</h3>
-
-<p>
-CODSOFT (2023)
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>⚙ Java Trainee Internship Certificate</h3>
-
-<p>
-Smartech Solutions (2023)
-</p>
-
-</div>
-
-
-</div>
-
+        <div class="card">
+            <h3>⚙ Java Trainee Internship Certificate</h3>
+            <p>Smartech Solutions (2023)</p>
+        </div>
+    </div>
 </section>
-
 
 <!-- EDUCATION -->
-
 <section id="education">
+    <h2>Education</h2>
 
-<h2>Education</h2>
+    <div class="project-card education-card">
+        <h3>🎓 Master of Computer Applications (MCA)</h3>
+        <p><b>Institution:</b> Sri Venkateswara College of Engineering, Tirupati</p>
+        <p><b>Specialization:</b> Computer Applications</p>
+        <p><b>Duration:</b> 2021 – 2023</p>
+        <p><b>Percentage:</b> 86%</p>
+    </div>
 
-
-<div class="project-card education-card">
-
-<h3>🎓 Master of Computer Applications (MCA)</h3>
-
-<p>
-<b>Institution:</b>
-Sri Venkateswara College of Engineering, Tirupati
-</p>
-
-<p>
-<b>Specialization:</b>
-Computer Applications
-</p>
-
-<p>
-<b>Duration:</b>
-2021 – 2023
-</p>
-
-<p>
-<b>Percentage:</b>
-86%
-</p>
-
-</div>
-
-
-<div class="project-card education-card">
-
-<h3>🎓 Bachelor of Science (B.Sc.)</h3>
-
-<p>
-<b>Institution:</b>
-Sri Sai Degree & P.G College, Railway Kodur
-</p>
-
-<p>
-<b>Specialization:</b>
-Computer Science
-</p>
-
-<p>
-<b>Duration:</b>
-2018 – 2021
-</p>
-
-<p>
-<b>Percentage:</b>
-84%
-</p>
-
-</div>
-
+    <div class="project-card education-card">
+        <h3>🎓 Bachelor of Science (B.Sc.)</h3>
+        <p><b>Institution:</b> Sri Sai Degree & P.G College, Railway Kodur</p>
+        <p><b>Specialization:</b> Computer Science</p>
+        <p><b>Duration:</b> 2018 – 2021</p>
+        <p><b>Percentage:</b> 84%</p>
+    </div>
 </section>
-
 
 <!-- CONTACT -->
-
 <section id="contact">
+    <h2>Contact</h2>
 
-<h2>Contact</h2>
+    <p>
+        📧 Email:
+        <a href="mailto:vinodkumar.maddela2@gmail.com">
+            vinodkumar.maddela2@gmail.com
+        </a>
+    </p>
 
+    <p>
+        <a href="https://www.linkedin.com/in/vinod-kumar-maddela1"
+           target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </p>
 
-<p>
-📧 Email:
-<a href="mailto:vinodkumar.maddela2@gmail.com">
-vinodkumar.maddela2@gmail.com
-</a>
-</p>
+    <p>
+        <a href="https://github.com/VinodKumarMaddela"
+           target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </p>
 
+    <p>
+        <a href="https://drive.google.com/file/d/1nTQ01h6vXTHEK3N8L3uCFm2s5ZSUVl3H/view?usp=drivesdk"
+           target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-file"></i> View Resume
+        </a>
+    </p>
 
-<p>
+    <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
 
-<a href="https://www.linkedin.com/in/vinod-kumar-maddela1"
-   target="_blank">
+    <p class="highlight">🚀 Open to Python Software Developer & Backend Developer Roles</p>
+    <p class="highlight">🚀 Available for immediate joining</p>
 
-<i class="fab fa-linkedin"></i>
-LinkedIn
-
-</a>
-
-</p>
-
-
-<p>
-
-<a href="https://github.com/VinodKumarMaddela"
-   target="_blank">
-
-<i class="fab fa-github"></i>
-GitHub
-
-</a>
-
-</p>
-
-
-<p>
-
-<a href="https://drive.google.com/file/d/1LEcpZ9APEPGqF73fQrWHjeQ2rcyfTK8d/view?usp=drivesdk"
-   target="_blank">
-
-<i class="fas fa-file"></i>
-View Resume
-
-</a>
-
-</p>
-
-
-<p>
-
-<i class="fas fa-map-marker-alt"></i>
-Bengaluru, India
-
-</p>
-
-
-<p class="highlight">
-🚀 Open to Python Software Developer & Backend Developer Roles
-</p>
-
-
-<p class="highlight">
-🚀 Available for immediate joining
-</p>
-
-
-<p>
-Let’s connect and build something amazing together!
-</p>
-
+    <p>Let's connect and build something amazing together!</p>
 </section>
 
-
 <!-- FOOTER -->
-
 <footer>
-
-<p>
-Let's build something amazing together 💻
-</p>
-
+    <p>Let's build something amazing together 💻</p>
 </footer>
 
-
 <!-- TYPING ANIMATION -->
-
 <script>
-
 const text = [
     "Python Software Developer",
     "Python Developer",
@@ -927,39 +620,25 @@ let current = "";
 let isDeleting = false;
 
 function type() {
-
     current = text[i];
 
     document.querySelector('.typing').textContent =
         current.substring(0, j);
 
     if (!isDeleting && j++ === current.length) {
-
         isDeleting = true;
-
-    }
-
-    else if (isDeleting && j-- === 0) {
-
+    } else if (isDeleting && j-- === 0) {
         isDeleting = false;
-
         i = (i + 1) % text.length;
-
     }
 
-    setTimeout(
-        type,
-        isDeleting ? 50 : 100
-    );
-
+    setTimeout(type, isDeleting ? 50 : 100);
 }
 
 type();
-
 </script>
-
 
 </body>
 </html>
-```
+
 
